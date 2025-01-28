@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control - Dispensador IoT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <h2>Menú</h2>
+        <ul>
+            <li><a href="index.html">Monitoreo</a></li>
+            <li><a href="configuracion.html">Configuración</a></li>
+            <li><a href="dashboard.html" class="active">Panel de Control</a></li>
+        </ul>
+    </aside>
+
+    <main class="dashboard-container">
+        <h1>Panel de Control</h1>
+        <p>Resumen del estado del dispensador IoT.</p>
+
+        <section class="dashboard-section">
+            <h2>Últimas Actividades</h2>
+            <ul id="activity-log">
+                <li>Dispensación programada a las 8:00 AM</li>
+                <li>Alerta: Nivel de alimento bajo</li>
+                <li>Alerta: Dispensador inclinado</li>
+            </ul>
+        </section>
+
+        <section class="dashboard-section">
+            <h2>Estadísticas de Uso</h2>
+            <p><strong>Dispensaciones en el día:</strong> <span id="dispenses-today">5</span></p>
+            <p><strong>Última dispensación:</strong> <span id="last-dispense">12:00 PM</span></p>
+        </section>
+    </main>
+
+</body>
+</html>

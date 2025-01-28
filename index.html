@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoreo - Dispensador IoT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <h2>Menú</h2>
+        <ul>
+            <li><a href="index.html" class="active">Monitoreo</a></li>
+            <li><a href="configuracion.html">Configuración</a></li>
+            <li><a href="dashboard.html">Panel de Control</a></li>
+        </ul>
+    </aside>
+
+    <main class="monitor-container">
+        <h1>Monitoreo del Dispensador IoT</h1>
+
+        <section class="monitor-section">
+            <h2>Nivel de Alimento</h2>
+            <div class="food-level">
+                <div class="level-bar" id="level-bar"></div>
+            </div>
+            <p id="food-status">Cargando datos...</p>
+        </section>
+
+        <section class="monitor-section">
+            <h2>Estado del Dispensador</h2>
+            <div class="tilt-alert" id="tilt-alert">Dispositivo estable</div>
+        </section>
+
+        <section class="monitor-section">
+            <h2>Indicadores de Estado</h2>
+            <div class="led-container">
+                <div class="led" id="led-green"></div>
+                <div class="led" id="led-orange"></div>
+                <div class="led" id="led-red"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
