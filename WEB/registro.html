@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Registro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background: linear-gradient(180deg, #161D6F, #0B2F9F);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #98DED9;
+        }
+        header {
+            background: #C7FFD8;
+            color: #161D6F;
+            padding: 20px;
+            font-size: 1.8em;
+            font-weight: 700;
+            width: 100%;
+            text-align: center;
+            border-bottom: 4px solid #98DED9;
+        }
+        main {
+            width: 90%;
+            max-width: 400px;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #98DED9;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            color: #FFFFFF;
+            font-size: 1em;
+        }
+        input::placeholder {
+            color: #C7FFD8;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background: #98DED9;
+            color: #161D6F;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: #C7FFD8;
+        }
+        .terms {
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+        .terms a {
+            color: #C7FFD8;
+            text-decoration: none;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 15px;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <main>
+        <form>
+            
+            <h1>Registro</h1>
+            
+            <input type="email" placeholder="Correo Electrónico" required>
+            <input type="text" placeholder="Nombre" required>
+            <input type="text" placeholder="Apellido Paterno" required>
+            <input type="text" placeholder="Apellido Materno" required>
+            <input type="tel" placeholder="Número telefónico (10 dígitos)" required>
+            <input type="password" placeholder="Contraseña (mínimo 6 caracteres)" required>
+            <input type="password" placeholder="Repetir Contraseña" required>
+            <p class="terms">Entiendo y acepto los <a href="#">términos y condiciones</a></p>
+            <button type="submit">Registrarse</button>
+        </form>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Mi Aplicación Móvil. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispensador de Alimentos IoT</title>
+    <link rel="stylesheet" href="styleVentas.css">
+    <style>
+    </style>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#caracteristicas" onclick="toggleMenu()">Panel de Control</a></li>
+            <li><a href="#tienda" onclick="toggleMenu()">Configuración</a></li>
+            <li><a href="#historial" class="active" onclick="toggleMenu()">Historial de Alimentación</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <section id="historial" class="historial">
+            <h2>📊 Historial de Alimentación</h2>
+            <p>Consulta cuándo y cuánta comida ha sido dispensada en los últimos días.</p>
+            <ul>
+                <li class="historial-item"><img src="dispensador.jpg" alt="Dispensador"><span>27 Enero - 08:00 AM - <strong>50g</strong></span></li>
+                <li class="historial-item"><img src="dispensador.jpg" alt="Dispensador"><span>26 Enero - 08:00 AM - <strong>50g</strong></span></li>
+                <li class="historial-item"><img src="dispensador.jpg" alt="Dispensador"><span>25 Enero - 08:00 AM - <strong>50g</strong></span></li>
+                <li class="historial-item"><img src="dispensador.jpg" alt="Dispensador"><span>24 Enero - 08:00 AM - <strong>50g</strong></span></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
